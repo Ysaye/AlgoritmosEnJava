@@ -11,16 +11,24 @@ mostrar
 1x2x3x4x5x6=720
 
 */
-
+import java.util.Scanner;
 public class productToNumber {   
 
    public static void main(String[] args) {
-   		int resultado = 0;
-   		System.out.println(args[0]);
-
-
-   		System.out.println("el producto es: "+resultado);
+        Scanner teclado = new Scanner(System.in);//se ingresa un nuero
+                
+        System.out.println("Favor de ingresar un numero");//se imprime en pantalla un mensaje
+        
+        int numero = teclado.nextInt();
+        int producto = 1;// se declaran las variables numero y producto
       
+        System.out.print("1");
+        
+        for(int i = 2; i <=numero; i++){// se utiliza una estructura para la condicion repetitiva
+            
+            producto = producto * i;
+            System.out.print("X" + i);
+        }
    }
 
 }
