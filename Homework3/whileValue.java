@@ -7,16 +7,21 @@ Complete el algoritmo:
 Dado un numero mayor a cero, imprima el valor actual desde cero hasta antes de llegar dado valor.
 
 */
+import java.util.Scanner;
 
 public class whileValue {   
 
    public static void main(String[] args) {
-   		int valorActual = 0;
-   		System.out.println(args[0]);
-
-   		//si valor actual < args[0]
-   			System.out.println("el valor actual es: "+valorActual);
-      
+   	 Scanner teclado = new Scanner(System.in);// entrada de datos
+        
+        System.out.println("ingrese numero \n");//se pide en pantalla un numero
+        int numero= teclado.nextInt();
+        int contador = 0;
+        
+        while(contador<=numero){//se usa value para la condicion
+            System.out.println("El valor actual es "+ contador); // muestra el valor actual
+            contador++;
+        }
    }
 
 }
