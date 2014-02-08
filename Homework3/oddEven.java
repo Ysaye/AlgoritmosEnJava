@@ -7,15 +7,15 @@ Complete el algoritmo:
 Dado un numero 'n' identifique si es par o impar
 
 */
-import java.util.Scanner;
+
 public class oddEven {   
 
    public static void main(String[] args) {
       
-      	Scanner teclado = new Scanner(System.in);//entrada de informacion
+      	int numero ;
         
-        System.out.println("Favor de ingresar un numero \n para ver si es par  " );
-        int numero = teclado.nextInt();
+       
+         numero = Integer.parseInt(args[0].toString());
         
         if(numero%2==0){//condicion para ver si es par que no 
             System.out.println("El numero es par");
