@@ -18,12 +18,12 @@ import java.util.Scanner;
 public class FlipFlop {   
 
    public static void main(String[] args) {
-                Scanner teclado = new Scanner(System.in);// crear objero teclado para ingreso de datos
+          
+          int numeroActual ;     
         
         
-        System.out.println("ingrese un numero");// se pide al usuario i numerongrese u
-        int numeroActual = teclado.nextInt();//el valor de numero ingresado y se le atribuye a la variable
-                                             //numeroActual
+       
+          numeroActual = Integer.parseInt(args[0].toString());
         
         for(int i =0; i < numeroActual; i++){//se utiliza una estructura de control para dar las condiciones
             if(i % 3 == 0){                  //he imprimir en pantalla
