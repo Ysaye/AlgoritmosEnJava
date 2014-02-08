@@ -9,13 +9,14 @@ import java.util.Scanner;
 public class rangeSum {   
 
    public static void main(String[] args) {
-       Scanner teclado = new Scanner(System.in);//objeto para ingresar numeros al sistema
+       
+        int inferior;
+        int superior;
         
+       
+        inferior= Integer.parseInt(args[0].toString());
         
-        System.out.println("Ingrese el limite inferior");
-        int inferior = teclado.nextInt();//ingreso a la variable inferior
-        System.out.println("ingrese el limite superior");
-        int superior = teclado.nextInt();//ingreso a la variable supeerior
+        superior = Integer.parseInt(args[1].toString());
         System.out.println("solucion");//mensaje de solucion para no confundir los numeros ingresados con la solucion
         
         for(int i=inferior + 1; i<superior; i++){//va imprimir inferior mas 1 para que este dentro del limite
