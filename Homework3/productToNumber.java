@@ -11,15 +11,13 @@ mostrar
 1x2x3x4x5x6=720
 
 */
-import java.util.Scanner;
+
 public class productToNumber {   
 
    public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);//se ingresa un nuero
-                
-        System.out.println("Favor de ingresar un numero");//se imprime en pantalla un mensaje
+        int numero;
         
-        int numero = teclado.nextInt();
+        numero = Integer.parseInt(args[0].toString());
         int producto = 1;// se declaran las variables numero y producto
       
         System.out.print("1");
@@ -29,6 +27,7 @@ public class productToNumber {
             producto = producto * i;
             System.out.print("X" + i);
         }
+        System.out.println("="+producto);
    }
 
 }
