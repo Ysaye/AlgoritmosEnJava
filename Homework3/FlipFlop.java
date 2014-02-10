@@ -25,7 +25,7 @@ public class FlipFlop {
        
           numeroActual = Integer.parseInt(args[0].toString());
         
-        for(int i =0; i < numeroActual; i++){//se utiliza una estructura de control para dar las condiciones
+        for(int i =0; i <= numeroActual; i++){//se utiliza una estructura de control para dar las condiciones
             if(i % 3 == 0){                  //he imprimir en pantalla
                 System.out.print("Flip");
             }
